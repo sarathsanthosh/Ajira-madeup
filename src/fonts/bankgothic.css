@@ -1,0 +1,4 @@
+@font-face {
+	font-family: 'BankGothicRegular';
+	src: local('BankGothicRegular'), url('./BankGothicRegular.woff') format('woff');
+}

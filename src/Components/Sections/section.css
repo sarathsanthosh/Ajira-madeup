@@ -1,0 +1,54 @@
+.latlistCollection{
+    display:inline-block;
+}
+.latlistCollection p{
+    margin-block-end: 5px;
+}
+.latCollection {  
+    padding-inline-start: 0px;
+    margin-bottom: 5rem;
+}  
+.latlistCollection span{
+    color:#E10000;
+    font-weight: 500;
+}
+.sec-image{
+    width:96%;
+    height:50%;
+    position: relative;
+}
+.sec-image:hover{
+    cursor: pointer;
+    border:1px solid#E10000;
+    position: relative;
+}
+.latresCollection{
+    display: none;
+}
+.latmobCollection{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .latCollection {  
+        display:none;
+    }  
+    .latresCollection{
+        display:grid;
+        grid-template-columns: repeat(4,[col-1] 25% [col-2] 25% [col-3] 25% [col-4] 25% );
+    }
+    .latmobCollection{
+        display: none;
+    } 
+}
+@media only screen and (max-width: 360px){
+    .latCollection {  
+        display:none;
+    }  
+    .latresCollection{
+        display: none;
+    }
+    .latmobCollection{
+        display:grid;
+        grid-template-columns: repeat(2,[col-1] 50% [col-2] 50% );
+    } 
+}

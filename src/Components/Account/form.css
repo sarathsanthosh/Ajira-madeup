@@ -1,0 +1,117 @@
+
+.form-container {
+  border: 2px solid #333333;
+  display: grid;
+  grid-template-rows: repeat(6, 0.1fr);
+  grid-gap: 20px;
+  padding: 1rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  place-items: start;
+}
+
+.form-container input{
+  padding:1rem;
+  width: 90%;
+}
+.firstName{
+  width: 85% !important
+}
+.lastName{
+  width: 80% !important
+}
+.form-order {
+  display: block;
+  margin-top: 21%;
+}
+.nameContainer {
+ display: flex;
+ width:100%;
+ list-style: none;
+ margin-block-start: 0px;
+ margin-block-end: 0px;
+ margin-inline-start: 0px;
+ margin-inline-end: 0px;
+ padding-inline-start: 0px;
+}
+
+.addressResButton{
+  display: none;
+}
+.header {
+  font-size: 22px;
+  font-family: Jost Regular;
+  font-weight: 100;
+  color: #777777;
+  padding: 2vh 2vh;
+  text-align: left;
+}
+
+input:focus {
+  border: 2px solid darkgray;
+}
+.addAddress {
+  width:100%
+}
+.addressButton {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 15px;
+  font-family: Jost Regular;
+  width:30%;
+  color:#FFFFFF;
+  background: #333333;
+  float:right;
+  margin-right: 4%;
+}
+.mailContainer,
+.numContainer,
+.passContainer,
+.confpassContainer {
+  width: 100%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 700px){
+  .addressButton{
+    display: none;
+  }
+  .addressResButton{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width:100%;
+    color: white;
+    background: black;
+  }
+  .addAddress {
+    width: 100%;
+  }
+  .form-container {
+    padding: 1rem;
+    place-items: start;
+    width: 143%;
+    margin-top: 1rem;
+    border:none;
+  }
+  .mailContainer,
+  .numContainer,
+  .passContainer,
+  .confpassContainer {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .nameContainer input{
+    margin: 5px 10px 5px -3px;
+  }
+  .nameContainer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .form-order {
+    display: none;
+  }
+}

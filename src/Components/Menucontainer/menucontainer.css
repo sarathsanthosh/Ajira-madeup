@@ -1,0 +1,54 @@
+.sidebar-menu {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 300px;
+  z-index: 9;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  background: white;
+  color: black;
+}
+.highlight{
+  color: #e10000;
+}
+.open {
+  transform-origin: right;
+  transform: translateX(300px);
+}
+.vertical{
+  padding-top:4rem;
+}
+.hide {
+  display: none !important;
+}
+.menu li {
+  list-style: none;
+  text-align: center;
+  font-family: Jost Regular;
+  color: #777777;
+  padding-bottom: 2rem;
+}
+.menu li:hover {
+  color: #e10000;
+  cursor: pointer;
+}
+.vertical-brand {
+  border-top: 2px solid #e5e5e5;
+  margin: 4vh 4vh;
+  padding-top: 1rem;
+}
+.profile-anchor{
+  text-decoration: none;
+  color:#777777;
+}
+.closeButton{
+  border: none;
+  outline: none;
+  background: white;
+  float:right;
+  margin: 1rem;
+}

@@ -1,0 +1,32 @@
+
+
+@font-face {
+    font-family: 'Jost Regular';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Jost Regular'), url('./Jost500Medium.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Jost Thin';
+        font-style: normal;
+        font-weight: 100;
+        src: local('Jost thin'), url('./Jost200Thin.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'Jost Light';
+            font-style: normal;
+            font-weight: 200;
+            src: local('Jost thin'), url('./Jost300Light.woff') format('woff');
+            }
+            @font-face {
+                font-family: 'Jost Book';
+                font-style: normal;
+                font-weight: 200;
+                src: local('Jost thin'), url('./Jost400Book.woff') format('woff');
+                }
+                @font-face {
+                    font-family: 'Jost Bold';
+                    font-style: normal;
+                    font-weight: 200;
+                    src: local('Jost thin'), url('./Jost600Semi.woff') format('woff');
+                    }

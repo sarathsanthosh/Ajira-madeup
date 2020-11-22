@@ -1,0 +1,112 @@
+.pa-grid {
+   background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    display: grid;
+    padding-left: 2rem;
+    grid-template-columns: repeat(3, [col-1] 10% [col-2] 68% [col-3] 5%);
+}
+.accountButton {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  right: 115px;
+  top: 27px;
+}
+.accountresButton {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    [col-start] minmax(50px, 1fr) [col-end]
+  );
+  grid-gap: 5px;
+  place-items: center;
+}
+.mu-nav {
+  cursor: pointer;
+}
+.madeup-anchor{
+  text-decoration: none;
+}
+.dropdownFeatures {
+  font-family: Jost Book;
+  font-size: 15px;
+  line-height: 20px;
+}
+.mu-nav:hover,.initial {
+  color: #e10000;
+}
+
+.header-brand {
+  justify-self: center;
+  text-decoration: none;
+}
+.header-brand:hover {
+  cursor: pointer;
+}
+.home-icon-show {
+    display: grid;
+    grid-template-columns: repeat(4, [col-start] minmax(40px, 0.1fr) [col-end]);
+    grid-gap: 5px;
+    padding-left: 70%;
+    align-items: center;
+}
+.home-icon-showpad{
+  display: grid;
+  grid-template-columns: repeat(1, [col-start] minmax(40px, 0.1fr) [col-end]);
+  grid-gap: 5px;
+  align-items: center;
+  padding-left: 240%;
+}
+.home-icon-hidden {
+  display: none;
+}
+.searchShow {
+  display: block;
+}
+.searchNone {
+  display: none;
+}
+.mobview-icon {
+  display: none;
+}
+@media only screen and (max-width: 780px) {
+  .pa-grid {
+    display: grid;
+    grid-template-columns: repeat(2, [col-1] 30%[col-2] 69%);
+    place-items: end;
+    padding:0px;
+    position: absolute;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .grid {
+    display: none;
+  }
+  .home-icon-show {
+    display: none;
+  }
+  .acc-icons-show {
+    display: none;
+  }
+  .mobview-icon {
+    display: grid;
+    grid-template-columns: repeat(3, [col-start] minmax(30px, 0.1fr) [col-end]);
+    grid-gap: 5px;
+    padding-bottom: 1.3rem;
+    place-items: start;
+  }
+  #roundButton {
+    border: none;
+    outline: none;
+    background: white;
+  }
+}
+
