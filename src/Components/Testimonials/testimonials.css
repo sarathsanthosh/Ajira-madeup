@@ -210,7 +210,7 @@
    display: none;
   }
   .couponPara-res{
-    display: block;
+    display: block!important;
     position: absolute;
     z-index: 9;
     color: rgb(255, 255, 255);
