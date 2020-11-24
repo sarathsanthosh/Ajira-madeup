@@ -14,11 +14,14 @@
   padding:1rem;
   width: 90%;
 }
+.nameContainer input{
+  width: 80% 
+}
 .firstName{
-  width: 85% !important
+  width: 85% 
 }
 .lastName{
-  width: 80% !important
+  width: 80% 
 }
 .form-order {
   display: block;
@@ -63,7 +66,7 @@ input:focus {
   color:#FFFFFF;
   background: #333333;
   float:right;
-  margin-right: 4%;
+  margin-right: 5.5%;
 }
 .mailContainer,
 .numContainer,
@@ -71,6 +74,29 @@ input:focus {
 .confpassContainer {
   width: 100%;
   text-align: left;
+}
+@media only screen and (max-width: 780px){
+  .firstName{
+    width: 80% 
+  }
+  .lastName{
+    width: 80% 
+  }
+  .addressButton {
+    width: 55%;
+    margin-right: 20%;
+    margin-top: 5%;
+  }
+  .form-container{
+    padding-bottom: 8%;
+  }
+  .form-order{
+    margin-top: 28%;
+  }
+  .card-container:hover {
+    width: 127%;
+  }
+
 }
 
 @media only screen and (max-width: 700px){

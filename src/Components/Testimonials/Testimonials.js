@@ -1,4 +1,5 @@
 import React from "react";
+import couponlab from "../../images/couponimage.png"
 import label from "../../images/label.png";
 import "../../fonts/jost.css";
 import "../../fonts/bankgothic.css";
@@ -73,10 +74,12 @@ const Testimony = () => {
       <div className="testimonialsMob">{secmobData.map(renderReviews)}</div>
       <div className="couponsGet">
         <p className="couponPara left-coupon">GET COUPONS & STYLE GUIDES</p>
+         <p className="couponPara-res left-coupon">GET COUPONS <br/>& STYLE GUIDES</p> 
         <p className="couponPara-sub left-coupon-sub">Subcribe to our NewsLetter</p>
         <input className="couponInput" placeholder="E-mail"></input>
         <button className="couponBut" >SUBSCRIBE</button>
         <img className="test-img" src={label}></img>
+        <img className="test-img-res" src={couponlab}></img>
       </div>
     </div>
   );

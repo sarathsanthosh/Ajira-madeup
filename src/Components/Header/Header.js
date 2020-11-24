@@ -42,7 +42,7 @@ class Header extends Component {
           <Link href="/"  onClick={(e) => {
                 this.handleHomeFlip(this.state.flip);
               }}
-              className="madeup-anchor"><MadeupBranding /></Link>
+              className="madeup-anchor"><MadeupBranding flip={this.state.isMenuOpen} /></Link>
         </div>
         <div className="grid">
           <div className= "mu-nav">
@@ -67,7 +67,7 @@ class Header extends Component {
             <div className="dropdownFeatures">Shorts</div>
           </div>
         </div>
-        <div className="home-icon-show" >
+        <div className={`${this.state.flip  ? "home-icon-show":"home-icon-showpad"}`} >
           <div  className={`${this.state.flip  ? "searchShow" :"searchNone"}`} >
             <a href="/search"><Search cssClass="homeSearch" /></a>
           </div>

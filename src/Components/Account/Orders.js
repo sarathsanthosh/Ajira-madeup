@@ -96,6 +96,7 @@ const Card = ({
         <p>{pay}</p>
         <h1 className="order-text">Rs 1,899</h1>
         <div className="chevDown"><Chevdown/></div>
+       
         <p className={`${dispatch === "Pending" ? "pending" : "pending-hide"}`}>
           {dispatch}
         </p>
@@ -108,8 +109,10 @@ const Card = ({
         </p>
       </div>
       <div className="pay-text-res">
-        <p>{pay}</p>
+        <p className="payment">{pay}</p>
+        <p className="payment-res">Cash on delivery &#x20B9; <b> 1,899</b></p>
         <h1 className="order-text">Rs 1,899</h1>
+        <div className="chevDown"><Chevdown/></div>
         <p className={`${dispatch === "Pending" ? "pending" : "pending-hide"}`}>
           {dispatch}
         </p>

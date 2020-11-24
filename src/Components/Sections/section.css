@@ -28,17 +28,29 @@
 .latmobCollection{
     display: none;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 769px){
     .latCollection {  
         display:none;
     }  
     .latresCollection{
+        overflow-x: hidden;
         display:grid;
-        grid-template-columns: repeat(4,[col-1] 25% [col-2] 25% [col-3] 25% [col-4] 25% );
+        grid-template-columns: repeat(4,[col-1] 30% [col-2] 30% [col-3] 30% [col-4] 25% );
     }
     .latmobCollection{
         display: none;
     } 
+    .sec-image{
+        height:80%
+    }
+    .latestCollections p {
+        width: 50%!important;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        line-height: 0.1em;
+        margin: 1% 27% 2%!important;
+        font-family: BankGothicRegular;
+    }
 }
 @media only screen and (max-width: 360px){
     .latCollection {  

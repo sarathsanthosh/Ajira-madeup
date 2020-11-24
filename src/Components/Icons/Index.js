@@ -2,9 +2,9 @@ import React from "react";
 import "./styles.css";
 import "../../fonts/scada.css";
 
-export function MadeupBranding() {
+export function MadeupBranding(props) {
   return (
-    <div className="madeupIcon">
+    <div className={`${props.flip  ? "madeupIcon" : "madeupIconres" }`}>
       <p>MADE UP</p>
     </div>
   );
@@ -16,7 +16,7 @@ export function Search() {
       focusable="false"
       xmlns="http://www.w3.org/2000/svg"
       width="16px"
-      height="16px"
+      height="50px"
       viewBox="0 0 18 18"
     >
       <path
@@ -70,7 +70,7 @@ export function Cart(props) {
     <svg
       className="cart"
       width="1em"
-      height="1em"
+      height="3em"
       viewBox="0 0 16 16"
       fillRule="currentColor"
       xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +202,7 @@ export function MenuIcon() {
     <svg
       className="menu"
       width="1.5em"
-      height="1.5em"
+      height="3.7em"
       viewBox="0 0 16 16"
       fillRule="currentColor"
       xmlns="http://www.w3.org/2000/svg"
@@ -217,7 +217,7 @@ export function MenuIcon() {
 export function Chevright() {
   return (
     <svg
-      width="1em"
+      width=".7Sem"
       height="1em"
       viewBox="0 0 16 16"
       fill="currentColor"

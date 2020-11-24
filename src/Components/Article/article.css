@@ -15,6 +15,19 @@
   white-space: nowrap;
   text-align: center;
 }
+.overlayPara-mu {
+  position: absolute;
+  color: black;
+  background: white;
+  text-align: left;
+  padding: 0.4% 0px 0.4% 0.4%;
+  width: 14%;
+  opacity: 0.9;
+  font-family: Jost Book;
+  font-size: 21px;
+  white-space: nowrap;
+  text-align: center;
+}
 
 .overlayPara-button {
   position: absolute;
@@ -31,38 +44,30 @@
   outline-style: none;
 }
 
-.slide-arrow.right {
+.slide-arrow-right {
   right: 1rem;
 }
 
-.slide-arrow.left {
+.slide-arrow-left {
   left: 1rem;
 }
 .headeroverlay {
   position: relative;
   text-align: center;
   color: white;
-  margin-bottom: 5rem;
+  margin-bottom: 3%;
 }
 .headerImage {
+  margin-top: 1.5%;
   width: 100%;
 }
 .headerresImage {
   display: none;
 }
-.nav-sel {
-  display: grid;
-  grid-template-columns: repeat(
-    7,
-    [row-1] 14% [row-2] 14% [row-3] 14% [row-4] 14% [row-5] 14% [row-6] 14%
-      [row-7] 14%
-  );
-  place-items: center;
-  border-radius: 2rem;
-  height: 100%;
-  width: 100%;
-  transition: 3s ease-in-out;
+.headeripadImage{
+  display: none;
 }
+
 .highlight {
   color: #e10000;
 }
@@ -140,12 +145,12 @@
   margin-right: 4rem;
   margin-left: 4rem;
 }
-@media only screen and (min-width: 768px) {
-  .nav-sel {
-    display: none;
+@media only screen and (max-width: 769px) {
+  .image-slide {
+    height: 100%;
+    width: 100%;
+    transition: background-image .3s ease-in-out;
   }
-}
-@media only screen and (max-width: 768px) {
   .latestCollections span {
     margin-right: 1rem;
     margin-left: 1rem;
@@ -156,17 +161,40 @@
   }
   .headerresImage {
     width: 100%;
-    display: block;
+    display: none;
   }
-  .nav-sel {
-    place-items: center;
-    margin-top: 3rem;
+  .headeripadImage{
+    display:block;
+    width:100%;
   }
+  .main{
+    top: 35%;
+    left: 37%;
+  }
+  .overlayPara {
+    width: 26%;
+   }
+   .main-down {
+    top: 43%;
+    left: 37%;
+   }
   .mu-section {
     display: block;
     position: relative;
     text-align: center;
     color: white;
+  }
+  .main-button {
+    top: 72%;
+    left: 36%;
+}
+.left {
+    top: 13%;
+    left: 35%;
+    padding: 0.4% 0.4% 1.4% 0.4%;
+}
+  .overlayPara-button{
+    width: 29%;
   }
   .overlaysecPara {
     position: absolute;
@@ -190,17 +218,14 @@
     font-family: Jost Regular;
     font-size: 22px;
   }
-  .left {
-    top: 20%;
-    left: 35%;
-  }
+ 
   .left-down {
-    top: 25%;
+    top: 16%;
     left: 35%;
   }
   .right {
     top: 60%;
-    right: 35%;
+    right: 38%;
   }
   .right-down {
     top: 85%;
@@ -216,15 +241,56 @@
     left: 25%;
   }
   .main-down {
+    top: 43%!important;
+}
+.last{
+  width:55%!important;
+}
+.main-button {
+  top: 70%;
+  left: 22%;
+}
+.overlayPara-button {
+  width: 61%;
+  padding:.5rem;
+  font-size:15px;
+}
+  .headeripadImage{
+    display:none;
+  }
+  .headerresImage{
+    display: block;
+    width: 100%;
+  }
+  .overlayPara{
+    width:49%
+  }
+  .overlayPara-mu {
+    display:none;
+}
+ .overlayPara-res{ 
+  position: absolute;
+  color: black;
+  background: white;
+  text-align: left;
+  padding: 0.4% 0px 0.4% 0.4%;
+  opacity: 0.9;
+  font-family: Jost Book;
+  font-size: 21px;
+  white-space: nowrap;
+  text-align: center;
+  width: 40%;
+}
+  .main-down {
     top: 47%;
     left: 25%;
   }
   .left {
-    top: 20%;
-    left: 25%;
+    top: 19%;
+    left: 28%;
   }
   .left-down {
-    top: 27%;
+    top: 23%;
     left: 25%;
   }
   .right {
@@ -232,7 +298,31 @@
     right: 25%;
   }
   .right-down {
-    top: 85%;
-    right: 25%;
+    top: 84%;
+    right: 19%;
   }
+  .latestCollections p {
+    width: 80%!important;
+    margin: 1% 12% 2%!important;
+
 }
+.latmobCollection {
+  overflow-x:hidden!important ;
+  display: grid;
+  grid-template-columns: repeat(2,[col-1] 65% [col-2] 65% );
+}
+.couponPara{
+  display: none;
+}
+.couponPara-res{
+  display: block;
+  position: absolute;
+  color: rgb(255, 254, 254);
+  padding: 1rem;
+  font-family: Jost Regular;
+  font-size: 35px;
+}
+
+
+}
+

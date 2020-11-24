@@ -1,6 +1,6 @@
 .orders {
   border: 1.9px solid #333333;
-  padding: 1vh 7vh 1vh 2vh;
+  padding: 1vh 0vh 1vh 2vh;
   margin-right: 3rem;
   font-family: Jost Regular;
   color: #e5e5e5;
@@ -16,7 +16,7 @@
   place-items: start;
 }
 .chevright{
-  display: none;
+  display: block;
 }
 .chevDown{
   text-align: end;
@@ -110,12 +110,7 @@ p {
   }
   .pay-text-res{
     display: grid;
-    grid-gap: 50px;
 
-  }
-  .pay-text-res h1{
-    display:none ;
-    
   }
   .pay-text-res p{
   font-size: 8px ;
@@ -126,14 +121,17 @@ p {
   }
   .orders {
     margin-right: 0px;
-    width: 120%;
+    width: 80%;
     margin-top: 1rem;
-    padding: 1vh 4vh 1vh 2vh;
+    padding: 1vh 6vh 1vh 2vh;
    
+  }
+  .chevDown{
+    color:black
   }
   .order-container {
     display: grid;
-    grid-template-columns: repeat(3, [col-1] 20% [col-2] 60% [col-3] 20%);
+    grid-template-columns: repeat(3, [col-1] 20% [col-2] 45% [col-3] 32%);
     grid-gap: 10px;
     border-bottom: 2px solid #e5e5e5;
     margin-bottom: 1rem;
@@ -141,17 +139,24 @@ p {
   }
   .order-container p{
    margin-left:1em;
+   font-size: 12px;
   }
   .order-container h4{
    margin-left:1em;
    font-size: .8rem;
+  }
+  .pending{
+    text-align: center!important;
+  }
+  .deliverd{
+    text-align: center!important;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .order-container {
     display: grid;
-    grid-template-columns: repeat(3, [col-1] 20% [col-2] 60% [col-3] 20%);
+    grid-template-columns: repeat(3, [col-1] 20% [col-2] 56% [col-3] 32%);
     grid-gap: 10px;
     border-bottom: 2px solid #e5e5e5;
     margin-bottom: 1rem;

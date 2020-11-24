@@ -18,6 +18,26 @@
   top: 0px;
   background: #e10000;
 }
+.madeupIconres {
+  width: 98.66px;
+  left: 55.17px;
+  top: 0px;
+  background: #e10000;
+  height: 64px;
+}
+.madeupIconres p {
+  width: 103px;
+  height: 25px;
+  color: white;
+  font-family: Scada Regular;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-block-start: 0px;
+  padding-top: 1em;
+}
 .MuiSvgIcon-root {
   fill: currentColor;
   width: 1em;
@@ -38,10 +58,36 @@
 .mob {
   padding-right: 1rem;
 }
+
 .mail {
   padding-right: 1rem;
 }
 .menu {
   margin-bottom: -6px;
-  padding:0px;
+  padding: 0px;
+}
+@media only screen and (max-width: 780px) {
+  .madeupIcon {
+    height: 55px;
+  }
+  .madeupIconres {
+    width: 98.66px;
+    left: 55.17px;
+    top: 0px;
+    background: #e10000;
+    height: 64px;
+  }
+  .madeupIconres p {
+    width: 103px;
+    height: 25px;
+    color: white;
+    font-family: Scada Regular;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-block-start: 0px;
+    padding-top: 1em;
+  }
 }

@@ -53,7 +53,7 @@ class Footer extends Component {
                 <Mailicon />
                 sales@madeup.com
               </p>
-              <p className="grid-txt">
+              <p className="grid-txt-mobi">
                 <Mobicon />
                 044 9999 9999
               </p>

@@ -87,7 +87,7 @@ const Card = ({ val, title, subtext }) => {
           </h4>
           <p>{subtext}</p>
         </div>
-        <div  onClick={chevToggle} className="chevRight">
+        <div  onClick={chevToggle} className="chevUp">
           {chev === true ?<Chevdown/>:<Chevup/>}
         </div>
         <div className={`${!open ? "account-slidedown" : "account-slidehide"}`}>

@@ -83,6 +83,23 @@
     text-align: center;
   }
   .gridContents{
-    align-items: unset;
+    text-align: center !important;
+  }
+  .grid-txt-header{
+    margin-left: 10%;
+
+  }
+  .grid-txt{
+    margin-left: 4%;
+    text-align: center;
+  }
+  .grid-txt-contact{
+    margin-left: 20%;
+    text-align: center;
+
+  }
+  .grid-txt-mobi{
+    margin-left: 20%;
+    text-align: center;
   }
 }

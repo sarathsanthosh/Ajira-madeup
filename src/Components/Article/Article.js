@@ -5,27 +5,21 @@ import headImg from "../../images/headerimg.png";
 import section from "../../images/section-1.png";
 import articletop from "../../images/sec-3.png";
 import articlebutton from "../../images/sec-4.png";
-import headerresImage from "../../images/carousel-2.png";
-import { ChevLeft, Chevright } from "../Icons/Index";
-
-const sliders = document.querySelectorAll(".slider-wrapper");
-
+import headerresImage from "../../images/mainmob.png";
+import ipadmain from "../../images/ipadmain.png";
+import SliderParent from "../Slider/Slider"
 class Article extends Component {
   constructor(props) {
     super(props);
-
-    
- 
-  
   }
-  
- 
-
 
   render() {
     return (
       <div className="slider">
         <div>
+          <div>
+          <SliderParent/>
+          </div>
           <section className="headeroverlay">
             <p className="overlayPara main">
               Clothes that <span className="highlight">respire</span>
@@ -35,11 +29,15 @@ class Article extends Component {
             </p>
             <button className="overlayPara-button main-button">BROWSE COLLECTIONS</button>
             <img className="headerImage" src={headImg}></img>
+            <img className="headeripadImage" src={ipadmain}></img>
             <img className="headerresImage" src={headerresImage}></img>
           </section>
           <section className="mu-section">
-            <p className="overlayPara left">
-              <span className="highlight">Summer</span> is here and
+            <p className="overlayPara-mu left">
+              <span className="highlight">Summer</span> is here and 
+            </p>
+            <p className="overlayPara-res left">
+              <span className="highlight">Summer</span> is here 
             </p>
             <p className="overlayPara left-down">
               so is our <span className="highlight">collections</span>
@@ -49,7 +47,7 @@ class Article extends Component {
               <p className="overlayPara right">
                 <span className="highlight">Wrinkle</span> free t-shirts
               </p>
-              <p className="overlayPara right-down">
+              <p className="overlayPara last right-down">
                 <span className="highlight">Stain-free </span>denim shirts
               </p>
               <img src={articletop}></img>
@@ -66,5 +64,6 @@ class Article extends Component {
     );
   }
 }
+
 
 export default Article;
