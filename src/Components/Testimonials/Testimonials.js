@@ -4,7 +4,8 @@ import label from "../../images/label.png";
 import "../../fonts/jost.css";
 import "../../fonts/bankgothic.css";
 import "./testimonials.css";
-import StarRating from "../StarRating/StarRating"
+import StarRating from "../StarRating/StarRating";
+import {Geolocation}  from "../Icons/Index"
 
 const Testimony = () => {
   const secData = [
@@ -78,6 +79,7 @@ const Testimony = () => {
         <p className="couponPara-sub left-coupon-sub">Subcribe to our NewsLetter</p>
         <input className="couponInput" placeholder="E-mail"></input>
         <button className="couponBut" >SUBSCRIBE</button>
+        <p className="locateUs"><Geolocation/>&nbsp;LOCATE&nbsp;US</p>
         <img className="test-img" src={label}></img>
         <img className="test-img-res" src={couponlab}></img>
       </div>

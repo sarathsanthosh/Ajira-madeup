@@ -9,9 +9,13 @@
     margin-bottom: 5rem;
 }  
 .latlistCollection span{
-    color:#E10000;
+    color:#333333;
     font-weight: 500;
 }
+.latlistCollection span{
+    color:#E10000;
+}
+
 .sec-image{
     width:96%;
     height:50%;

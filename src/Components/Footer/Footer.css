@@ -83,7 +83,9 @@
     text-align: center;
   }
   .gridContents{
-    text-align: center !important;
+    padding-top:3rem;
+    text-align: none !important;
+    align-items: center!important;
   }
   .grid-txt-header{
     margin-left: 10%;
