@@ -184,23 +184,83 @@ class SliderParent extends React.Component {
       },
       {
         image: jeans,
-        css: { backgroundColor: "lightgrey" },
+        css: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "4.5em",
+            height: "4.5em",
+            borderRadius: "3.5rem",
+          },
+          cssres: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "2.5em",
+            height: "2.5em",
+            borderRadius: "3.5rem",
+          },
+          text: "Trousers",
       },
       {
         image: tshirts,
-        css: { backgroundColor: "lightgrey" },
+        css: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "4.5em",
+            height: "4.5em",
+            borderRadius: "3.5rem",
+          },
+          cssres: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "2.5em",
+            height: "2.5em",
+            borderRadius: "3.5rem",
+          },
+          text: "Trousers",
       },
       {
         image: shirts,
-        css: { backgroundColor: "lightgrey" },
+        css: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "4.5em",
+            height: "4.5em",
+            borderRadius: "3.5rem",
+          },
+          cssres: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "2.5em",
+            height: "2.5em",
+            borderRadius: "3.5rem",
+          },
+          text: "Trousers",
       },
       {
         image: trousers,
-        css: { backgroundColor: "lightgrey" },
+        css: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "4.5em",
+            height: "4.5em",
+            borderRadius: "3.5rem",
+          },
+          cssres: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "2.5em",
+            height: "2.5em",
+            borderRadius: "3.5rem",
+          },
+          text: "Trousers",
       },
       {
         image: forme,
-        css: { backgroundColor: "lightgrey" },
+        css: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "4.5em",
+            height: "4.5em",
+            borderRadius: "3.5rem",
+          },
+          cssres: {
+            backgroundColor: "rgb(251 245 234)",
+            width: "2.5em",
+            height: "2.5em",
+            borderRadius: "3.5rem",
+          },
+          text: "Trousers",
       },
     ];
 
